@@ -1,7 +1,10 @@
-node v20.11.1에서 개발. 
+node v20.11.1에서 개발.
 배포는 ①% npm run build
 ②% npm run deploy
 
+<!-- rm -rf node_modules package-lock.json
+npm install
+ -->
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
