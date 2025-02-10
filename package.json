@@ -1,27 +1,53 @@
 {
-  "name": "minimal-mistakes",
+  "name": "gatsby-starter-blog",
   "private": true,
-  "version": "4.26.2",
-  "description": "Minimal Mistakes 2 column Jekyll theme.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mmistakes/minimal-mistakes.git"
-  },
-  "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
-  ],
-  "author": "Michael Rose",
-  "license": "MIT",
+  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
-  "engines": {
-    "node": ">= 0.10.0"
+  "dependencies": {
+    "@fontsource-variable/montserrat": "^5.0.17",
+    "@fontsource/merriweather": "^5.0.8",
+    "gatsby": "^5.14.1",
+    "gatsby-plugin-feed": "^5.13.1",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-remark-images": "^7.13.2",
+    "gatsby-remark-prismjs": "^7.13.2",
+    "gatsby-remark-responsive-iframe": "^6.13.2",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "prismjs": "^1.29.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "uglify-js": "^3.17.4"
+    "gh-pages": "^6.2.0",
+    "prettier": "^2.8.8"
+  },
+  "homepage": "https://brlyle.github.io/",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "predeploy": "gatsby build",
+    "deploy": "gh-pages -d public",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
