@@ -1,100 +1,118 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hyoyeon Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Hyoyeon can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 05:20:12 GMT</lastBuildDate><item><title><![CDATA[0511!]]></title><description><![CDATA[51151511 이효연]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/test/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/test/</guid><pubDate>Sun, 09 Feb 2025 08:00:00 GMT</pubDate><content:encoded>&lt;p&gt;51151511 이효연&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
-&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;This however showed weasel&lt;/li&gt;
-&lt;li&gt;Well uncritical so misled
-&lt;ul&gt;
-&lt;li&gt;this is very interesting&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
-view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
-&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.&lt;/p&gt;
-&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hyoyeon Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Hyoyeon can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2025 21:39:09 GMT</lastBuildDate><item><title><![CDATA[python]]></title><description><![CDATA[빗썸....note 실행]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/python/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/python/</guid><pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;빗썸....note&lt;/p&gt;
+&lt;h4&gt;실행&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip
+
+[notice] A new release of pip is available: 24.3.1 -&gt; 25.0
+[notice] To update, run: python3.13 -m pip install --upgrade pip
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─&gt; To install Python packages system-wide, try brew install
+xyz, where xyz is the package you are trying to
+install.
+이런 에러가 났을 대 가상 환경에서 인스톨
+
+➜ hy_test git:(main) ✗ python3 -m venv venv
+➜ hy_test git:(main) ✗ source venv/bin/activate
+(venv) ➜ hy_test git:(main) ✗ python3 -m pip install requests
+(venv) ➜ hy_test git:(main) ✗ pip install python-dotenv
+(venv) ➜ hy_test git:(main) ✗ python3 KoreaStockAutoTrade.py 파일 실행&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[JavaScript udemy]]></title><description><![CDATA[What is JavaScript? JavaScript is a dynamic, weakly typed programming language which is compiled at runtime. It can be executed as part of a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Udemy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Udemy/</guid><pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;What is JavaScript?&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
+&lt;p&gt;JavaScript is a dynamic, weakly typed programming language which is compiled at runtime. It can be executed as part of a webpage in a browser or directly on any machine (“host environment”).
+-&gt; 런타임에 컴파일 되는 동적 프로그래밍 언어이다. 브라우저에서 웹페이지의 일부로 실행되거나, 직접 어떤 기기(“호스트 환경”)에서 실행될 수도 있다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
-&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;So baboon this&lt;/li&gt;
-&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
-&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
-&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
-impassive fruitlessly shut&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word &quot;and&quot; and the Little Blind Text should turn around and
-return to its own, safe country.&lt;/p&gt;
+&lt;p&gt;JavaScript was created to make webpages more dynamic (e.g. change content on a page directly from inside the browser). Originally, it was called LiveScript but due to the popularity of Java, it was renamed to JavaScript.
+-&gt; 웹페이지를 더 동적으로 만들기 위해 개발, ex)브라우저에서 직접 페이지의 내용을 변경하기 위해,,,&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.&lt;/p&gt;
-&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
-&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.&lt;/p&gt;
-&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
-&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
-&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.&lt;/p&gt;
-&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word &quot;and&quot; and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[@@@@@@@@@@@@2$$##$#$#$]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/my-second-post/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;@@@@@@@@@@@@2$$##$#$#$&lt;/p&gt;</content:encoded></item><item><title><![CDATA[github private]]></title><description><![CDATA[인터뷰할때..
+&lt;hr&gt;
+&lt;h4&gt;How do webpages work?&lt;/h4&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fcd567e503fe919b8d16265bd13b710f/64639/image.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACCElEQVR42nWSy05TURSGKz4E72BijMaJxgk2MY5MLA+gQ536Bo4EJo5kACSGmFDiSFsCQluIUdCWWgxQbFEKll44PafX09Oe++duSxqPl538WfvPXvtf+19r+/h9uS5uL7TK2FuzA3yaw/78UuznzvksrioN8hxHXHE9Ej6voDMIhR3MicuYzwQmr2E+v4U5dXXAJ67gFnc9+f8V1LQ2SrWOquTpHoQxMmHMzFuMwxW6acG/hbCyIerSTyRZQZZlKpUKpmn+W9CyLPSugWGrNE5LdKqnuNqR4BL14zP0Zh66OWp1iVKp3BdTFMVj22uZwYFptpAO0rQOjlC3v6JV00jpLOr+d9RkEsdqevI9ll3HxbGdIXrL0JuU9tLU4ikasTWaxaTgh9Q+xmmsL2PrymAorjMEOP0Cvj8r2KYo4HbQSsLiXggnMY1R26ddqGDsLmInZ7DaleGv+OuFOxs7pGIpkpEk2S9Z5KJM6ThPfClKfDlKYjVCfHWDrTdrJN5F2I5EaTUa50MW/dYLdDpFdBEdp4Vv+skLHl56wE3fDR5ff4SaU9kMbjE2MoZ/xE9gNMC4QGD0Pv6Lfm5fuMPuh5iQi9JprVDO3+NHZpxC7i7d9mt8+5t7LM2EmX86T+TVWr/PZydnLEwsEBRYnAoO0ePBySByodwbHZZZpaut06y/R2vHsK0TfgEItsimxELIQAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;alt text&quot;
+        title=&quot;&quot;
+        src=&quot;/static/fcd567e503fe919b8d16265bd13b710f/f058b/image.png&quot;
+        srcset=&quot;/static/fcd567e503fe919b8d16265bd13b710f/c26ae/image.png 158w,
+/static/fcd567e503fe919b8d16265bd13b710f/6bdcf/image.png 315w,
+/static/fcd567e503fe919b8d16265bd13b710f/f058b/image.png 630w,
+/static/fcd567e503fe919b8d16265bd13b710f/40601/image.png 945w,
+/static/fcd567e503fe919b8d16265bd13b710f/78612/image.png 1260w,
+/static/fcd567e503fe919b8d16265bd13b710f/64639/image.png 1568w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;유저가 브라우저 사용&lt;/li&gt;
+&lt;li&gt;웹페이지 요청이 서버로 전송&lt;/li&gt;
+&lt;li&gt;서버가 그 웹페이지를 로드해 유저 브라우저로 다시 보냄&lt;/li&gt;
+&lt;li&gt;양식 제출을 서버로 보내기 위해 브라우저에서 서버로 새로운 요청 보내&lt;/li&gt;
+&lt;li&gt;주문 데이터를 저장하는 등 처리&lt;/li&gt;
+&lt;li&gt;완료 새로운 웹페이지 클라이언트에 응답 보냄&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;How is JavaScript executed?&lt;/h4&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7ff1f0a9b2ea363181d66e29519886f2/a8a6f/image-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACF0lEQVR42m1TS2sTURTOr3HhQnDhwo1diBXcKIhQEBH3RtGFYiourK0kuJAiqbSQuNAIXZkqnUJraLsTLDS2Q32keY55NDHpTDPve+/nmblTBNsD38y5nHO/+51zz40xn4ExCU6+7/kIrLi+iQej9/BsbAJT15/j4cX7eJ98F8YE5/QRR0EWw3/GuQyUtipIP3qLzOQcspMvMZPIYWV+XRJGm4+z2MJMHkpWgZJRkE/n8W2tGAaY0QKqq+ClN2A/k0C5ANHdhvBdCL1NaILv/yZocj3sS8I7I3GMX04gcSWB+Lk45l/kwoBVXII5cRJ28gzs1FlYT0/A+vCYymUQRCQGGnhrB7xbpnUT4qArCU3NhF7TQwwbQ3gDOwx4OwW4ry7Ay16TSI/CUaYgqNei/R28TWRNUtz+AUHEAWlIqC01sPupFKK2WENflSe56jKc1Gn40yPwps/DS52C8/FJ2L+gXGF0IPr1qHyCGZVcWSyjulxB43Mdgd9T96TC0hdYczdgZa4SLsGeHYO9Ohv2MFDGtU3wxgZEZwvoqvB6VbiOj1h4IoHTKBz68iYdggHP3YBtLoALnXKMw1kIMsAtA4Y2oHYN8Kfag2M7R8dGJpNC5yt6rVvod26j27yLPe0mzP3XEC7dsjuE8CywAx2NQh1qbhv1tRoYXdgxhJFCPqQhLxF2o/8vML8TpfwbZu7Ro3B9ehRSyF88VdI9lxGWGAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;alt text&quot;
+        title=&quot;&quot;
+        src=&quot;/static/7ff1f0a9b2ea363181d66e29519886f2/f058b/image-1.png&quot;
+        srcset=&quot;/static/7ff1f0a9b2ea363181d66e29519886f2/c26ae/image-1.png 158w,
+/static/7ff1f0a9b2ea363181d66e29519886f2/6bdcf/image-1.png 315w,
+/static/7ff1f0a9b2ea363181d66e29519886f2/f058b/image-1.png 630w,
+/static/7ff1f0a9b2ea363181d66e29519886f2/40601/image-1.png 945w,
+/static/7ff1f0a9b2ea363181d66e29519886f2/78612/image-1.png 1260w,
+/static/7ff1f0a9b2ea363181d66e29519886f2/a8a6f/image-1.png 1516w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;크롬브라우저 v8엔진이야 역할: 코드를 분석&lt;/li&gt;
+&lt;li&gt;코드 분석&lt;/li&gt;
+&lt;li&gt;머신 코드로 즉석 컴파일링&lt;/li&gt;
+&lt;li&gt;머신 코드 실행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;-- 브라우저에는 코드를 가져와서 컴파일하고 최적화하고 실행하는 내장 도구가 있고 모든 작업은 싱글스레드&lt;/p&gt;</content:encoded></item><item><title><![CDATA[github private]]></title><description><![CDATA[인터뷰할때..
 저장소 클론 안받아질때!
 참조: https://tmjb.tistory.com/83 또하나
 Next.js window객체가 없다고할때
-https://velog.io/@taese0ng/Next.js-window…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/github-private555/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/github-private555/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;인터뷰할때..
+https://velog.io/@taese0ng/Next.js-window…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/github-private/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/github-private/</guid><pubDate>Sun, 09 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;인터뷰할때..
 저장소 클론 안받아질때!
 참조: &lt;a href=&quot;https://tmjb.tistory.com/83&quot;&gt;https://tmjb.tistory.com/83&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;또하나
@@ -117,9 +135,7 @@ git remote set-url origin git@github-brlyle:brlyle/brlyle.github.io.git&lt;/p&gt
 decimal.js가 안됐었던 이유
 npm의 패키지로서 존재하지만 패키지가 업뎃되어서 동작하지 않게 되는것을 방지하기 위해
 정적파일로서 불러오기 위해서&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt;
-&lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;text/javascript&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/static/js/decimal.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;text/javascript&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/static/js/decimal.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이렇게 설정해두고 public에 저장해서 쓰면된다.
 nextjs/gmocoin-tools/public/static/js/decimal.js&lt;/p&gt;
 &lt;p&gt;gmocoin-tools
@@ -147,12 +163,12 @@ const안에서는 hook을 사용할 수 없다
 this가 여기서 사용됨&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 생성자 함수 예시&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; age&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; name
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; age
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; person1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Alice&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;person1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { name: &quot;Alice&quot;, age: 30 }&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; person1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Alice&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;person1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// { name: &quot;Alice&quot;, age: 30 }&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
 &lt;p&gt;I&apos;m sure I&apos;ll write a lot more interesting things in the future.&lt;/p&gt;
 &lt;p&gt;Oh, and here&apos;s a great quote from this Wikipedia on
