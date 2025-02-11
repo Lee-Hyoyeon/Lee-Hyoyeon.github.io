@@ -12,7 +12,7 @@ module.exports = {
     title: `Hyoyeon Starter Blog`,
     author: {
       name: `Hyoyeon`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      // summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Hyoyeon can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
