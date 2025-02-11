@@ -1,6 +1,6 @@
 ---
 title: github private
-date: "2015-05-01T22:12:03.284Z"
+date: "2025-02-09"
 description: "Hello World"
 ---
 
@@ -27,28 +27,29 @@ git remote set-url origin git@github-brlyle:brlyle/brlyle.github.io.git
 
 로컬에서 깃헙 여러유저 사용하기도 해야함
 
-
 gmocoin-tools
 仮想通貨移動履歴の未確認検索
 decimal.js가 안됐었던 이유
 npm의 패키지로서 존재하지만 패키지가 업뎃되어서 동작하지 않게 되는것을 방지하기 위해
 정적파일로서 불러오기 위해서
+
 ```html
-<script
-type="text/javascript"
-src="/static/js/decimal.js"></script>
+<script type="text/javascript" src="/static/js/decimal.js"></script>
 ```
+
 이렇게 설정해두고 public에 저장해서 쓰면된다.
 nextjs/gmocoin-tools/public/static/js/decimal.js
 
 gmocoin-tools
 仮想通貨移動履歴の未確認検索
 Goland의 Simplify가 알려준거임. 검증은 gpt한테. 아래와 같이 물어봤을때
+
 ```
 if (inIndexFrom !== undefined && inIndexFrom != null) {
 이거는 아래와 같이 바꿔도 문제없니?
 if (inIndexFrom != undefined) {
 ```
+
 ```
 네, if (inIndexFrom !== undefined && inIndexFrom != null)를 if (inIndexFrom != undefined)로 바꿔도 동일하게 작동합니다.
 
@@ -69,20 +70,17 @@ const안에서는 hook을 사용할 수 없다
 생성자 함수는 JavaScript에서 새로운 객체를 생성하고, 그 객체에 초기값을 설정하는 특별한 유형의 함수입니다.
 생성자 함수는 new 키워드와 함께 호출되어 새로운 객체를 생성하고, 그 객체에 초기값을 설정하는 역할을 합니다.
 this가 여기서 사용됨
+
 ```javascript
 // 생성자 함수 예시
 function Person(name, age) {
-    this.name = name;
-    this.age = age;
+  this.name = name
+  this.age = age
 }
 
-const person1 = new Person("Alice", 30);
-console.log(person1); // { name: "Alice", age: 30 }
+const person1 = new Person("Alice", 30)
+console.log(person1) // { name: "Alice", age: 30 }
 ```
-
-
-
-
 
 This is my first post on my new fake blog! How exciting!
 
