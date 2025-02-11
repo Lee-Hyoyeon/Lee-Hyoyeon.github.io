@@ -1,6 +1,6 @@
 ---
 title: JavaScript udemy
-date: "2025-02-10"
+date: "2025-02-11"
 discription: "JavaScript란 무엇인가?"
 ---
 

@@ -4,9 +4,7 @@ date: "2025-02-10"
 discription: "파이썬...."
 ---
 
-빗썸....note
-
-#### 실행
+#### 한투 파이썬 실행
 
 ```
 hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip
