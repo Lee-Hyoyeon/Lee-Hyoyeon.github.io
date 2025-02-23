@@ -1,5 +1,5 @@
 ---
-title: JavaScript udemy
+title: What is JavaScript [udemy]
 date: "2025-02-11"
 discription: "JavaScript란 무엇인가?"
 ---
