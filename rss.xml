@@ -1,4 +1,190 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hyoyeon Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Hyoyeon can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Feb 2025 02:40:22 GMT</lastBuildDate><item><title><![CDATA[Ecommerce demo]]></title><description><![CDATA[ecommerce aws IAM 만들고 -> S3 버킷 만들고 버킷 퍼미션 내용 추가 object upload (shoe사진 파일을 업로드 함 https://mybucket-ecommerce-test.s3.us-east-2.amazonaws.com…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/AWS-ecommerce/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/AWS-ecommerce/</guid><pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;ecommerce aws&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hyoyeon Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Hyoyeon can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Feb 2025 05:36:17 GMT</lastBuildDate><item><title><![CDATA[Login chat note]]></title><description><![CDATA[메모 깃 클론이 안될때 클론이 프라이빗 리포지토리일때는 토큰혹은 ssh를 이용해야한다.
+근데 이번에 토큰을 만들었다. 깃헙에서 토큰 만들기. GitHub에서 Personal Access Token 생성하기 GitHub…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/loginChat_note/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/loginChat_note/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;메모&lt;/h3&gt;
+&lt;p&gt;깃 클론이 안될때 클론이 프라이빗 리포지토리일때는 토큰혹은 ssh를 이용해야한다.
+근데 이번에 토큰을 만들었다.&lt;/p&gt;
+&lt;p&gt;깃헙에서 토큰 만들기.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GitHub에서 Personal Access Token 생성하기&lt;/li&gt;
+&lt;li&gt;GitHub 계정에 로그인합니다.&lt;/li&gt;
+&lt;li&gt;오른쪽 상단의 프로필 사진을 클릭하고 Settings로 이동합니다.&lt;/li&gt;
+&lt;li&gt;왼쪽 메뉴에서 Developer settings &gt; Personal access tokens &gt; **Tokens (classic)**를 선택합니다.&lt;/li&gt;
+&lt;li&gt;Generate new token &gt; **Generate new token (classic)**을 클릭합니다.&lt;/li&gt;
+&lt;li&gt;**Token에 사용할 이름(노트)**과 유효기간을 설정합니다.&lt;/li&gt;
+&lt;li&gt;필요한 **권한(scopes)**을 선택합니다:
+&lt;ul&gt;
+&lt;li&gt;기본적으로 repo 권한이 필요합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Generate token 버튼을 클릭하면 토큰이 생성됩니다. 복사해 둡니다. (다시 볼 수 없으니 반드시 저장!)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이런식
+ubuntu@ip-172-31-5-244:~/mygit/login-chat$ git clone https://ghp_&lt;a href=&quot;mailto:XETau79Qn9k5rHVp7SjDRWgQKjzCtm3tMbEr@github.com&quot;&gt;XETau79Qn9k5rHVp7SjDRWgQKjzCtm3tMbEr@github.com&lt;/a&gt;/Lee-Hyoyeon/login-chat.git&lt;/p&gt;
+&lt;p&gt;aws에서 네트워크
+시큐리티 그룹에 인바운드에 443 https를 추가했다.
+인스턴스를 재부팅 했다.&lt;/p&gt;
+&lt;p&gt;npm run build&lt;/p&gt;
+&lt;p&gt;되는거
+&lt;a href=&quot;http://hyoyeon.s3-website.us-east-2.amazonaws.com/&quot;&gt;http://hyoyeon.s3-website.us-east-2.amazonaws.com/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;aws 과금&lt;/h3&gt;
+&lt;p&gt;Ec2 안돌아가고 vpc 오하이오빼고 다 삭제 vpc 다른거 여러개 돌아가는데 왜 ?
+s3만 쓰기때매 과급 이유엑스
+-&gt; case 그대로 유지 하고 다시 서비스 보냄&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;git log&lt;/h3&gt;
+&lt;p&gt;디버깅 하는 방법
+깃 리포지토리 들어가서 commits
+내가 적었던 커밋 내용 보면서 뭐가 바꼈는지 보고 되돌려서 실행 시켜보기&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;Reference&lt;/h4&gt;
+&lt;p&gt;내 구글 클라우드 클라이언트- &lt;a href=&quot;https://console.cloud.google.com/auth/clients?invt=AbjhLw&amp;#x26;project=hy-project-439904&amp;#x26;inv=1&quot;&gt;https://console.cloud.google.com/auth/clients?invt=AbjhLw&amp;#x26;project=hy-project-439904&amp;#x26;inv=1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;웹 서버 애플리케이션 설명
+&lt;a href=&quot;https://developers.google.com/identity/protocols/oauth2/web-server#node.js_5&quot;&gt;https://developers.google.com/identity/protocols/oauth2/web-server#node.js_5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;참고했던 블로그 한국
+&lt;a href=&quot;https://ahn3330.tistory.com/166&quot;&gt;https://ahn3330.tistory.com/166&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;구글 클라우드 가이드
+&lt;a href=&quot;https://cloud.google.com/apigee/docs/api-platform/security/oauth/access-tokens?hl=ko&quot;&gt;https://cloud.google.com/apigee/docs/api-platform/security/oauth/access-tokens?hl=ko&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;깃에 있는 모드모듈 지우기
+git rm -r --cached .
+git add .
+git commit -m &quot;remove node_modules&quot;
+git push&lt;/p&gt;</content:encoded></item><item><title><![CDATA[googleOauth Login Chat Portfolio]]></title><description><![CDATA[Login Chat Portfolio 📄 Google Portfolio.pdf Run frontend start npm start; backend start sever/ node index.js; Local setting…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Login-Chat-Portfolio/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Login-Chat-Portfolio/</guid><pubDate>Sat, 22 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;Login Chat Portfolio&lt;/h3&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e4d68be1e07cc8144a5e9404af152667/38cea/image.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 139.24050632911394%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAABYlAAAWJQFJUiTwAAACtElEQVR42rWVXWsTQRSG87/EG6/8BYJ45YW3gjeCoFBtoWmCbVMoEYRSoTaJxhZjhYqIsVq0WrFJk02MtsQk5GOzm2abNibZj9eZ2d2y2c1Hm+LAy8zOzD5zzpyzZ10Y0rQhz/bmGgZUNQ3coYC3lSy2ayX8VeTRgBREWyCXwsVoAJc2QrgQXcYYtznQWtcwd2/uvMOdxAYeZr7Bnd7Cta+vUWg2ug49k8u3dz/g+vY6bsXe48b3N7i6tQah3dQPPAvQPH1TKDCXL38K48qXCIL5lGG9NlpQFAIO5dNISFU9INp5o9zH8pGBppWKqva8s4FA+oL5knWsEtje/j6azWbXmlU9gYqiotORiTqQZQWyorBxm4jO03VV1XrKhHYBW60WisUi8vkCRLGGQqGACs+zcb80MeepFw4gnaSilijEOmqlboFqkf1ZV08Le1khy/LJ6VZLTh1l85LNFwVBQHw3gZ+ZDBJJDtnsn4HuO1y2btTBmhEkWQ+UYfGpXG63OyiVyiQwJZTLek9hQ2umcXAXUDPuq9E4wkG9jrokQZIOGZAFiMgMlKI41Tco520u6wXvZ3P4EUsilkgRcayP0/Euh514Ejukjxtzccsal/7FPk0HcPHpc9yb8GLCO4dxj4+Jjien5+Hx+eGde9S1RnXfPYOpWT8aR8dO4MJSCHfHPWzjg6lZJjr2+RfwJBDG48VlBqQQc31schrumXkCPHICox8/Yym4gmerawitvELwRQQhItoHwi+ZgsYzWyN7AuEIVtfWSYa0/2NQTtKm1YC49xutDklWTWXpI9RqqB3UwfNVlEhu8tUqRDIniCJLLVpwaUo5igMDtiXE9jgc69azzy6Xz7MKRKsOrUKVCk/mRQaXCHBotdGM6myt0JpVZkE1IPa9Lvuf2P4t96vQ9kpt3uE/bxFVF9E1X/0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;alt text&quot; title=&quot;&quot; src=&quot;/static/e4d68be1e07cc8144a5e9404af152667/f058b/image.png&quot; srcset=&quot;/static/e4d68be1e07cc8144a5e9404af152667/c26ae/image.png 158w,
+/static/e4d68be1e07cc8144a5e9404af152667/6bdcf/image.png 315w,
+/static/e4d68be1e07cc8144a5e9404af152667/f058b/image.png 630w,
+/static/e4d68be1e07cc8144a5e9404af152667/38cea/image.png 678w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;h4&gt;&lt;a href=&quot;./Login Chat.pdf&quot;&gt;📄 Google Portfolio.pdf&lt;/a&gt;&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h5&gt;Run&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;frontend start
+&lt;ul&gt;
+&lt;li&gt;npm start;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;backend start
+&lt;ul&gt;
+&lt;li&gt;sever/ node index.js;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Local setting&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;구글 클라우드 클라이언트에서
+&lt;ul&gt;
+&lt;li&gt;브라우저 요청에 사용 &lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;.env local 환경 세팅 : REACT_APP_REDIRECT_URL=&lt;a href=&quot;http://localhost:3000&quot;&gt;http://localhost:3000&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;chat.js에서 socket = new WebSocket(&quot;ws://localhost:3001&quot;);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Aws Amplify deploy&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;create new app&lt;/li&gt;
+&lt;li&gt;github link&lt;/li&gt;
+&lt;li&gt;commit 하면 자동 배포&lt;/li&gt;
+&lt;li&gt;domain : &lt;a href=&quot;https://main.d3j4dwe7mj38lf.amplifyapp.com/&quot;&gt;https://main.d3j4dwe7mj38lf.amplifyapp.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;EC2 create instance&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;create instance / Amazon Linux2023/ t2.micro&lt;/li&gt;
+&lt;li&gt;키 페어 다운로드 (.pem 파일 저장)&lt;/li&gt;
+&lt;li&gt;서버 코드에서 localhost 대신 0.0.0.0으로 변경!&lt;/li&gt;
+&lt;li&gt;Inbound rules (인바운드 규칙) 수정&lt;/li&gt;
+&lt;li&gt;새 규칙 추가
+&lt;ol&gt;
+&lt;li&gt;Type: Custom TCP
+Port Range: 3001
+Source: Anywhere (0.0.0.0/0)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://3.89.60.14:3001&quot;&gt;http://3.89.60.14:3001&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;SSH로 EC2 접속하기 (터미널에서 실행)&lt;/h4&gt;
+&lt;p&gt;ssh -i /Users/hyoyeon/Downloads/my-key.pem &lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ec2-user → Amazon Linux 기본 사용자 이름&lt;/li&gt;
+&lt;li&gt;3.89.60.14 → EC2 퍼블릭 IP (사용자마다 다름!)&lt;/li&gt;
+&lt;li&gt;If error
+&lt;ol&gt;
+&lt;li&gt;&quot;Permission denied (publickey)&quot; 오류 발생하면?
+&lt;ol&gt;
+&lt;li&gt;chmod 400 /Users/hyoyeon/Downloads/my-key.pem&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&quot;No such file or directory&quot; 오류 발생하면?
+&lt;ol&gt;
+&lt;li&gt;키 파일 이름이 정확한지 확인!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;EC2 인스턴스에 SSH로 접속 한 후 현재 사용자의 홈 디렉토리 경로 확인&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;echo $HOME ---&gt;/home/ec2-user&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h4&gt;로컬 프로젝트를 EC2에 업로드 하기&lt;/h4&gt;
+&lt;p&gt;scp -i /Users/hyoyeon/Downloads/my-ec2-key.pem -r /Users/hyoyeon/login-chat &lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;:/home/ec2-user/&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-i /Users/hyoyeon/Downloads/my-ec2-key.pem
+EC2에 접속할 때 사용하는 SSH 키 파일을 지정
+이 키(.pem 파일)가 있어야 EC2에 접속 가능
+-r /Users/hyoyeon/login-chat
+로컬 컴퓨터에 있는 login-chat 폴더를 포함한 모든 파일을 업로드
+-r 옵션은 **폴더를 재귀적으로 업로드(하위 파일 포함)**하도록 해줌
+&lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;:/home/ec2-user/
+EC2 서버의 로그인 계정 (ec2-user)
+EC2의 IP 주소 (3.89.60.14)
+업로드할 경로 (/home/ec2-user/)
+즉, EC2의 /home/ec2-user/ 폴더 안에 login-chat 폴더가 생성&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;EC2에서 프로젝트 확인
+&lt;blockquote&gt;
+&lt;p&gt;cd /home/ec2-user
+ls # login-chat 폴더가 있는지 확인
+cd login-chat&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;Node.js &amp;#x26; npm 설치 (처음 1회만 실행)
+&lt;blockquote&gt;
+&lt;p&gt;sudo yum update -y
+curl -fsSL &lt;a href=&quot;https://rpm.nodesource.com/setup_18.x&quot;&gt;https://rpm.nodesource.com/setup_18.x&lt;/a&gt; | sudo bash -
+sudo yum install -y nodejs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;프로젝트 의존성 설치
+&lt;blockquote&gt;
+&lt;p&gt;npm install&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;서버 실행
+&lt;blockquote&gt;
+&lt;p&gt;node server.js
+✅ EC2 퍼블릭 IP로 접속 (&lt;a href=&quot;http://3.89.60.14:3001&quot;&gt;http://3.89.60.14:3001&lt;/a&gt;) → 서버 정상 작동 확인 🚀&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4&gt;EC2에 로컬 프로젝트 올리는 순서&lt;/h4&gt;
+&lt;p&gt;1️⃣ EC2 인스턴스 생성 (Amazon Linux 2, 보안 그룹 설정)
+2️⃣ EC2에 SSH 접속
+3️⃣ 로컬 프로젝트 EC2로 업로드 (scp 사용)
+4️⃣ EC2에서 프로젝트 확인 (cd login-chat)
+5️⃣ Node.js &amp;#x26; npm 설치
+6️⃣ 프로젝트 의존성 설치 (npm install)
+7️⃣ 서버 실행 (node server.js)
+8️⃣ EC2 퍼블릭 IP로 접속하여 확인 (http://&amp;#x3C;EC2_IP&gt;:3001)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Ecommerce demo [java]]]></title><description><![CDATA[ecommerce aws IAM 만들고 -> S3 버킷 만들고 버킷 퍼미션 내용 추가 object upload (shoe사진 파일을 업로드 함 https://mybucket-ecommerce-test.s3.us-east-2.amazonaws.com…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/aws-ecommerce/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/aws-ecommerce/</guid><pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;ecommerce aws&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;IAM 만들고 -&gt; S3 버킷 만들고&lt;/li&gt;
 &lt;li&gt;버킷 퍼미션 내용 추가&lt;/li&gt;
@@ -17,7 +203,7 @@
 &lt;ol start=&quot;3&quot;&gt;
 &lt;li&gt;object upload (shoe사진 파일을 업로드 함 &lt;a href=&quot;https://mybucket-ecommerce-test.s3.us-east-2.amazonaws.com/shoes.jpeg&quot;&gt;https://mybucket-ecommerce-test.s3.us-east-2.amazonaws.com/shoes.jpeg&lt;/a&gt; 오브젝트url클릭하면 이미지 보임)&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[JavaScript udemy]]></title><description><![CDATA[What is JavaScript? JavaScript is a dynamic, weakly typed programming language which is compiled at runtime. It can be executed as part of a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/Udemy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Udemy/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;What is JavaScript?&lt;/h4&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[222]]></title><link>https://gatsbystarterblogsource.gatsbyjs.io/udemy/index2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/udemy/index2/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[What is JavaScript [udemy]]]></title><description><![CDATA[What is JavaScript? JavaScript is a dynamic, weakly typed programming language which is compiled at runtime. It can be executed as part of a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/udemy/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/udemy/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;What is JavaScript?&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;JavaScript is a dynamic, weakly typed programming language which is compiled at runtime. It can be executed as part of a webpage in a browser or directly on any machine (“host environment”).
 -&gt; 런타임에 컴파일 되는 동적 프로그래밍 언어이다. 브라우저에서 웹페이지의 일부로 실행되거나, 직접 어떤 기기(“호스트 환경”)에서 실행될 수도 있다.&lt;/p&gt;
@@ -109,21 +295,18 @@
 &lt;li&gt;머신 코드로 즉석 컴파일링&lt;/li&gt;
 &lt;li&gt;머신 코드 실행&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;-- 브라우저에는 코드를 가져와서 컴파일하고 최적화하고 실행하는 내장 도구가 있고 모든 작업은 싱글스레드&lt;/p&gt;</content:encoded></item><item><title><![CDATA[222]]></title><link>https://gatsbystarterblogsource.gatsbyjs.io/Udemy/index2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/Udemy/index2/</guid><pubDate>Tue, 11 Feb 2025 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[python]]></title><description><![CDATA[한투 파이썬 실행]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/python/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/python/</guid><pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;한투 파이썬 실행&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip
-
-[notice] A new release of pip is available: 24.3.1 -&gt; 25.0
+&lt;p&gt;-- 브라우저에는 코드를 가져와서 컴파일하고 최적화하고 실행하는 내장 도구가 있고 모든 작업은 싱글스레드&lt;/p&gt;</content:encoded></item><item><title><![CDATA[python]]></title><description><![CDATA[한투 파이썬 실행 (조코딩 한투플젝) hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip [notice] A new release of pip is available: 24.3.1 -> 25.…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/python/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/python/</guid><pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;한투 파이썬 실행 (조코딩 한투플젝)&lt;/h4&gt;
+&lt;p&gt;hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip&lt;/p&gt;
+&lt;p&gt;[notice] A new release of pip is available: 24.3.1 -&gt; 25.0
 [notice] To update, run: python3.13 -m pip install --upgrade pip
-error: externally-managed-environment
-
-× This environment is externally managed
+error: externally-managed-environment&lt;/p&gt;
+&lt;p&gt;× This environment is externally managed
 ╰─&gt; To install Python packages system-wide, try brew install
 xyz, where xyz is the package you are trying to
 install.
-이런 에러가 났을 대 가상 환경에서 인스톨
-
-➜ hy_test git:(main) ✗ python3 -m venv venv
+이런 에러가 났을 대 가상 환경에서 인스톨&lt;/p&gt;
+&lt;p&gt;➜ hy_test git:(main) ✗ python3 -m venv venv
 ➜ hy_test git:(main) ✗ source venv/bin/activate
 (venv) ➜ hy_test git:(main) ✗ python3 -m pip install requests
 (venv) ➜ hy_test git:(main) ✗ pip install python-dotenv
-(venv) ➜ hy_test git:(main) ✗ python3 KoreaStockAutoTrade.py 파일 실행&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+(venv) ➜ hy_test git:(main) ✗ python3 KoreaStockAutoTrade.py 파일 실행&lt;/p&gt;</content:encoded></item></channel></rss>
