@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hyoyeon Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Hyoyeon can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Feb 2025 07:25:46 GMT</lastBuildDate><item><title><![CDATA[Login chat note]]></title><description><![CDATA[메모 깃 클론이 안될때 클론이 프라이빗 리포지토리일때는 토큰혹은 ssh를 이용해야한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hyoyeon Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Hyoyeon can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 Mar 2025 00:32:01 GMT</lastBuildDate><item><title><![CDATA[Login chat note]]></title><description><![CDATA[메모 깃 클론이 안될때 클론이 프라이빗 리포지토리일때는 토큰혹은 ssh를 이용해야한다.
 근데 이번에 토큰을 만들었다. 깃헙에서 토큰 만들기. GitHub에서 Personal Access Token 생성하기 GitHub…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/loginChat_note/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/loginChat_note/</guid><pubDate>Thu, 27 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;메모&lt;/h3&gt;
 &lt;p&gt;깃 클론이 안될때 클론이 프라이빗 리포지토리일때는 토큰혹은 ssh를 이용해야한다.
 근데 이번에 토큰을 만들었다.&lt;/p&gt;
@@ -107,6 +107,7 @@ Source: Anywhere (0.0.0.0/0)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://3.89.60.14:3001&quot;&gt;http://3.89.60.14:3001&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
+&lt;h3&gt;서버 빌드&lt;/h3&gt;
 &lt;h4&gt;SSH로 EC2 접속하기 (터미널에서 실행)&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;ssh -i /Users/hyoyeon/Downloads/my-key.pem &lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -179,7 +180,8 @@ cd login-chat&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ssh -i /Users/hyoyeon/Downloads/my-key.pem &lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;
+&lt;p&gt;서버 실행 코드
+ssh -i /Users/hyoyeon/Downloads/my-key.pem &lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;
 cd login-chat
 cd server
 node index.js&lt;/p&gt;
@@ -193,7 +195,61 @@ node index.js&lt;/p&gt;
 5️⃣ Node.js &amp;#x26; npm 설치
 6️⃣ 프로젝트 의존성 설치 (npm install)
 7️⃣ 서버 실행 (node server.js)
-8️⃣ EC2 퍼블릭 IP로 접속하여 확인 (http://&amp;#x3C;EC2_IP&gt;:3001)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[python]]></title><description><![CDATA[한투 파이썬 실행 (조코딩 한투플젝) hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip [notice] A new release of pip is available: 24.3.1 -> 25.…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/python/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/python/</guid><pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;한투 파이썬 실행 (조코딩 한투플젝)&lt;/h4&gt;
+8️⃣ EC2 퍼블릭 IP로 접속하여 확인 (http://&amp;#x3C;EC2_IP&gt;:3001)&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;클라이언트 빌드&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;터미널에서 프론트엔드 폴더로 이동
+cd /Users/hyoyeon/login-chat&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;React 프로젝트 빌드 실행
+npm run build&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;build 폴더가 생성됨 (이걸 EC2에 올린다)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;EC2에 build 폴더 전송
+scp -i /Users/hyoyeon/Downloads/my-ec2-key.pem -r /Users/hyoyeon/login-chat/build &lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;:/home/ec2-user/login-chat/
+✅ EC2에 /home/ec2-user/login-chat/build 폴더가 업로드됨!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nginx 설정 변경 방법 (EC2에서 실행)
+1️⃣ EC2에 접속하기
+ssh -i /Users/hyoyeon/Downloads/my-ec2-key.pem &lt;a href=&quot;mailto:ec2-user@3.89.60.14&quot;&gt;ec2-user@3.89.60.14&lt;/a&gt;
+2️⃣ Nginx 설정 파일 열기
+sudo nano /etc/nginx/nginx.conf
+3️⃣ 파일 안에서 server { ... } 부분을 찾아서 아래처럼 수정하기
+server {
+listen 80;
+server_name 3.89.60.14;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;location / {
+    root /home/ec2-user/login-chat/build;
+    index index.html;
+    try_files $uri /index.html;
+}
+
+location /api/ {
+    proxy_pass http://localhost:3001/;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;}
+🔹 location / {} → React(프론트엔드) 빌드 파일 제공
+🔹 location /api/ {} → Node.js 서버(백엔드)로 API 요청 전달
+설정 저장하고 나가기
+Ctrl + X → Y → Enter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nginx 설정 파일에 문법 오류가 없는지 확인하려면 아래 명령어를 실행
+sudo nginx -t&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nginx 재시작
+설정이 정상이라면, Nginx를 재시작하여 변경 사항을 적용
+sudo systemctl restart nginx&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[python]]></title><description><![CDATA[한투 파이썬 실행 (조코딩 한투플젝) hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip [notice] A new release of pip is available: 24.3.1 -> 25.…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/python/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/python/</guid><pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;한투 파이썬 실행 (조코딩 한투플젝)&lt;/h4&gt;
 &lt;p&gt;hy_test git:(main) ✗ python3.13 -m pip install --upgrade pip&lt;/p&gt;
 &lt;p&gt;[notice] A new release of pip is available: 24.3.1 -&gt; 25.0
 [notice] To update, run: python3.13 -m pip install --upgrade pip

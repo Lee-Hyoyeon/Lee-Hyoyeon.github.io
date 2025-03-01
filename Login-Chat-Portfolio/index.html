@@ -58,6 +58,7 @@ Source: Anywhere (0.0.0.0/0)</li>
 <li><a href="http://3.89.60.14:3001">http://3.89.60.14:3001</a></li>
 </ol>
 <hr>
+<h3>서버 빌드</h3>
 <h4>SSH로 EC2 접속하기 (터미널에서 실행)</h4>
 <p><strong>ssh -i /Users/hyoyeon/Downloads/my-key.pem <a href="mailto:ec2-user@3.89.60.14">ec2-user@3.89.60.14</a></strong></p>
 <ol>
@@ -130,7 +131,8 @@ cd login-chat</p>
 </li>
 </ul>
 <blockquote>
-<p>ssh -i /Users/hyoyeon/Downloads/my-key.pem <a href="mailto:ec2-user@3.89.60.14">ec2-user@3.89.60.14</a>
+<p>서버 실행 코드
+ssh -i /Users/hyoyeon/Downloads/my-key.pem <a href="mailto:ec2-user@3.89.60.14">ec2-user@3.89.60.14</a>
 cd login-chat
 cd server
 node index.js</p>
@@ -144,7 +146,61 @@ node index.js</p>
 5️⃣ Node.js &#x26; npm 설치
 6️⃣ 프로젝트 의존성 설치 (npm install)
 7️⃣ 서버 실행 (node server.js)
-8️⃣ EC2 퍼블릭 IP로 접속하여 확인 (http://&#x3C;EC2_IP>:3001)</p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#f8f8f8;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/5aab2d30d527ebcc51bb38c37386ac03/d4bf4/profile-pic.avif 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/5aab2d30d527ebcc51bb38c37386ac03/3faea/profile-pic.webp 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png" data-srcset="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/5aab2d30d527ebcc51bb38c37386ac03/d4bf4/profile-pic.avif 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/5aab2d30d527ebcc51bb38c37386ac03/3faea/profile-pic.webp 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png" srcSet="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p>Written by <strong>Hyoyeon</strong> <!-- --> </p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/python/">← <!-- -->python</a></li><li><a rel="next" href="/loginChat_note/">Login chat note<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2025<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Login-Chat-Portfolio/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+8️⃣ EC2 퍼블릭 IP로 접속하여 확인 (http://&#x3C;EC2_IP>:3001)</p>
+<hr>
+<h3>클라이언트 빌드</h3>
+<ol>
+<li>
+<p>터미널에서 프론트엔드 폴더로 이동
+cd /Users/hyoyeon/login-chat</p>
+</li>
+<li>
+<p>React 프로젝트 빌드 실행
+npm run build</p>
+</li>
+<li>
+<p>build 폴더가 생성됨 (이걸 EC2에 올린다)</p>
+</li>
+<li>
+<p>EC2에 build 폴더 전송
+scp -i /Users/hyoyeon/Downloads/my-ec2-key.pem -r /Users/hyoyeon/login-chat/build <a href="mailto:ec2-user@3.89.60.14">ec2-user@3.89.60.14</a>:/home/ec2-user/login-chat/
+✅ EC2에 /home/ec2-user/login-chat/build 폴더가 업로드됨!</p>
+</li>
+<li>
+<p>Nginx 설정 변경 방법 (EC2에서 실행)
+1️⃣ EC2에 접속하기
+ssh -i /Users/hyoyeon/Downloads/my-ec2-key.pem <a href="mailto:ec2-user@3.89.60.14">ec2-user@3.89.60.14</a>
+2️⃣ Nginx 설정 파일 열기
+sudo nano /etc/nginx/nginx.conf
+3️⃣ 파일 안에서 server { ... } 부분을 찾아서 아래처럼 수정하기
+server {
+listen 80;
+server_name 3.89.60.14;</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">location / {
+    root /home/ec2-user/login-chat/build;
+    index index.html;
+    try_files $uri /index.html;
+}
+
+location /api/ {
+    proxy_pass http://localhost:3001/;
+}</code></pre></div>
+<p>}
+🔹 location / {} → React(프론트엔드) 빌드 파일 제공
+🔹 location /api/ {} → Node.js 서버(백엔드)로 API 요청 전달
+설정 저장하고 나가기
+Ctrl + X → Y → Enter</p>
+</li>
+<li>
+<p>Nginx 설정 파일에 문법 오류가 없는지 확인하려면 아래 명령어를 실행
+sudo nginx -t</p>
+</li>
+<li>
+<p>Nginx 재시작
+설정이 정상이라면, Nginx를 재시작하여 변경 사항을 적용
+sudo systemctl restart nginx</p>
+</li>
+</ol></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#f8f8f8;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/5aab2d30d527ebcc51bb38c37386ac03/d4bf4/profile-pic.avif 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" data-srcset="/static/5aab2d30d527ebcc51bb38c37386ac03/3faea/profile-pic.webp 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png" data-srcset="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/5aab2d30d527ebcc51bb38c37386ac03/d4bf4/profile-pic.avif 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/ee81f/profile-pic.avif 100w" sizes="50px"/><source type="image/webp" srcSet="/static/5aab2d30d527ebcc51bb38c37386ac03/3faea/profile-pic.webp 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/6a679/profile-pic.webp 100w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png" srcSet="/static/5aab2d30d527ebcc51bb38c37386ac03/e5610/profile-pic.png 50w,/static/5aab2d30d527ebcc51bb38c37386ac03/e9b55/profile-pic.png 100w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p>Written by <strong>Hyoyeon</strong> <!-- --> </p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/python/">← <!-- -->python</a></li><li><a rel="next" href="/loginChat_note/">Login chat note<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2025<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Login-Chat-Portfolio/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
